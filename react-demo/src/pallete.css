@@ -1,0 +1,41 @@
+.question-container {
+  display: flex;
+  gap: 20px;
+}
+
+.question-content {
+  flex-grow: 1;
+}
+
+.current-question {
+  margin-bottom: 20px;
+}
+
+.question-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left:15px;
+}
+.question-number.answered {
+  background-color:green;
+  color: white;
+}
+
+.question-numbers {
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  border-radius: 2px;
+}
+
+.question-number {
+  padding: 5px;
+  cursor: pointer;
+  border: 1px;
+  
+}
+
+.question-number.active {
+  background-color:red;
+}
