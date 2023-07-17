@@ -1,7 +1,4 @@
-// import logo from './logo.svg';
-// import ApiCall from './editprofile';
-// //import Search from './search';
-// //import YourComponent from './viewqns
+
 import Login from "./login";
 import ExamsList from "./examlist";
 import Question from "./Question";
@@ -18,8 +15,7 @@ function App(){
   return(
     <div>
        
-      {/* <Question serverKey={serverKey} tokenu={tokenu} id={id} examid={examid}/>
-      */}
+      
       <BrowserRouter>
        <Routes>
         <Route path="/" element={<Navbar/>}/>
@@ -37,17 +33,5 @@ function App(){
 }
  export default App;
 
-// import React from 'react';
-// import { Provider } from 'react-redux';
-// import Store from './redux/store';
-// import Component from './redux/dispatch';
 
-// const App = () => {
-//   return (
-//     <Provider store={Store}>
-//       <Component />
-//     </Provider>
-//   );
-// };
 
-// export default App;
