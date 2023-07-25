@@ -32,6 +32,14 @@ function App(){
   )
 }
  export default App;
+// import Bhav from "./class";
 
+// function App(){
 
-
+//   return(
+//     <div>
+// {<Bhav/>}
+//     </div>
+//   )
+// }
+// export default App;
