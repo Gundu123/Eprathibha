@@ -1,0 +1,46 @@
+{
+  "type": "API Gateway",
+  "icon": "aws-api-gateway",
+  "child": [
+    {
+      "type": "Lambda",
+      "icon": "aws-lambda",
+      "child": [
+        {
+          "type": "Server",
+          "icon": "aws-ec2",
+          "child": [
+            {
+              "type": "Queue",
+              "icon": "aws-auto-scaling",
+              "child": [
+                {
+                  "type": "Worker1",
+                  "icon": "aws-ec2"
+                },
+                {
+                  "type": "Worker2",
+                  "icon": "aws-ec2"
+                },
+                {
+                  "type": "Worker3",
+                  "icon": "aws-ec2",
+                  "Analytical": []
+                }
+              ]
+            },
+            {
+              "type": "Data",
+              "child": [
+                {
+                  "type": "S3",
+                  "icon": "aws-simple-storage-service"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
