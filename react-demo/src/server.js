@@ -8,12 +8,12 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Nodemailer setup
+
 const transporter = nodemailer.createTransport({
-  service: 'Gmail', // You can use other email services too
+  service: 'Gmail', 
   auth: {
-    user: 'dharavathbhavsingh5@gmail.com', // Replace with your Gmail email
-    pass: 'hsaxvsdjxahqttuj', // Use app-specific password if using 2-step verification
+    user: 'dharavathbhavsingh5@gmail.com', 
+    pass: 'hsaxvsdjxahqttuj', 
   },
 });
 
@@ -27,10 +27,10 @@ app.post('/api/storeFormData', async (req, res) => {
   // Send an email with form data
   try {
     await transporter.sendMail({
-      from: 'dharavathbhavsingh5@gmail.com', // Sender's email (should be the same as auth user)
+      from: 'dharavathbhavsingh5@gmail.com',
       to: recipientEmail, // Recipient's email
       subject: 'Form Submission',
-      text: JSON.stringify(formData, null, 2), // Convert data to formatted JSON string
+      text: JSON.stringify(formData, null, 2), 
     });
 
     console.log('Form data sent:', formData);
